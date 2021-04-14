@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Home Page</title>
+</head>
+<body>
+	<b>Administrator - Update  Subject and Teachers to classes</b>
+	<br/>
+	<div id="button"><a href="subjects.html"> <button> Update Subjects </button> </a></div> 
+	<div id="button"><a href="teacher.html"> <button> Update Teachers </button> </a></div> 
+	<div id="button"><a href="classes.html"> <button> Update Classes </button> </a></div> 
+	<br/>
+
+	<b>Administrator - Assign Subject and Teachers to classes</b>
+	<br/>
+	<br/>
+	<form action="AssignmentServlet" method="post">
+		Details for Class : <input type="text" name="classes"/> 
+		<br/>
+		Input Subject and Teacher details for requested Class:
+		<br/>
+		Enter Subject 1 : <input type="text" name="subject1"/> 
+		Enter Subject 1 Teacher  : <input type="text" name="teacher1"/>
+		<br/>
+		<input type="submit" value="Assign Subjects and Teachers">
+	</form>
+	<br/>
+	<br/>
+	<form action="AssignmentServlet" method="get">
+		Click below button to get the current Subject lists:
+		<br/>
+		Enter Class details (Subject and Teachers): <input type="text" name="classes2"/> 
+		<br/>
+		<input type="submit" name="button" value="Get Subjects and Teachers">
+	</form>
+</body>
+</html>

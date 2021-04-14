@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Classes Setup</title>
+</head>
+<body>
+	<div id="button"><a href="home.html"> <button> Home </button> </a></div> 
+	<br/>
+	<b> Set up a master list of all the classes </b>
+	<br/>
+	<br/>
+	<form action="ClassesServlet" method="post">
+		Enter Class : <input type="text" name="classes"/> 
+		<br/>
+		Enter Student Names : <input type="text" name="student1"/>
+		<input type="text" name="student2"/> 
+		<input type="text" name="student3"/> 
+		<input type="text" name="student4"/> 
+		<input type="text" name="student5"/>  
+		<br/>
+		<input type="submit" value="Update Class Details">
+	</form>
+	<br/>
+	<br/>
+	<form action="ClassesServlet" method="get">
+		Click here to get the Master list of Students:
+		<br/>
+		<input type="submit" name="button" value="Students Master lists">
+	</form>
+</body>
+</html>

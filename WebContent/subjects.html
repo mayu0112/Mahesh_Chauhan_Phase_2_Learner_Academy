@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Subject Setup</title>
+</head>
+<body>
+	<div id="button"><a href="home.html"> <button> Home </button> </a></div> 
+	<br/>
+	<b>Set up a master list of all the subjects for all the classes </b>
+	<br/>
+	<br/>
+	<form action="SubjectsServlet" method="post">
+		Enter Subject : <input type="text" name="subject"/> 
+		<br/>
+		<input type="submit" value="Update Subject">
+	</form>
+	<br/>
+	<br/>
+	<form action="SubjectsServlet" method="get">
+		Click below button to get the current Subject lists:
+		<br/>
+		<input type="submit" name="button" value="Subject lists">
+	</form>
+</body>
+</html>

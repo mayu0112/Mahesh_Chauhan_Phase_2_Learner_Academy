@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Teachers Setup</title>
+</head>
+<body>
+	<div id="button"><a href="home.html"> <button> Home </button> </a></div> 
+	<br/>
+	<b> Set up a master list of all the Teachers </b>
+	<br/>
+	<br/>
+	<form action="TeachersServlet" method="post">
+		Enter Teacher : <input type="text" name="teacher"/> 
+		<br/>
+		<input type="submit" value="Update Teacher Details">
+	</form>
+	<br/>
+	<br/>
+	<form action="TeachersServlet" method="get">
+		Click below button to get the current Teachers lists:
+		<br/>
+		<input type="submit" name="button" value="Teachers lists">
+	</form>
+</body>
+</html>
